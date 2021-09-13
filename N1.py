@@ -4,10 +4,38 @@ print("[1] - Caminho vermelho")
 print("[2] - Caminho preto")
 caminho = int(input())
 
-def default():
-  print("Você está na sala:")
+if caminho == 1:
+  print("Você está na sala: 2")
+  print("Escolha seu caminho:")
+  print("[1] - Caminho vermelho")
+  print("[2] - Caminho preto")
+  caminho = int(input())
+  if caminho == 1:
+    print("Você está na sala: 3")
+    print("Escolha seu caminho:")
+    print("[1] - Caminho vermelho")
+    print("[2] - Caminho preto")
+    caminho = int(input())
+  elif caminho == 2:
+    print("Você está na sala: 4")
+    print("Escolha seu caminho:")
+    print("[1] - Caminho vermelho")
+    print("[2] - Caminho preto")
+    caminho = int(input())
+elif caminho == 2:
+  print("Você está na sala: 3")
+  print("Escolha seu caminho:")
+  print("[1] - Caminho vermelho")
+  print("[2] - Caminho preto")
+  caminho = int(input())
+  if caminho == 1:
+    print("Você está na sala: ")
+    print("Escolha seu caminho:")
+    print("[1] - Caminho vermelho")
+    print("[2] - Caminho preto")
+    caminho = int(input())
 
-interação = 1
+interação = 0
 while interação < 7:
   interação += 1
 else:
