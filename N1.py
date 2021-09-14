@@ -1,43 +1,19 @@
-print("Você está na sala: 1")
-print("Escolha seu caminho:")
-print("[1] - Caminho vermelho")
-print("[2] - Caminho preto")
-caminho = int(input())
-
-if caminho == 1:
-  print("Você está na sala: 2")
+def mensagem_automática():
+  print("Você está na sala: ")
   print("Escolha seu caminho:")
   print("[1] - Caminho vermelho")
   print("[2] - Caminho preto")
   caminho = int(input())
-  if caminho == 1:
-    print("Você está na sala: 3")
-    print("Escolha seu caminho:")
-    print("[1] - Caminho vermelho")
-    print("[2] - Caminho preto")
-    caminho = int(input())
-  elif caminho == 2:
-    print("Você está na sala: 4")
-    print("Escolha seu caminho:")
-    print("[1] - Caminho vermelho")
-    print("[2] - Caminho preto")
-    caminho = int(input())
-elif caminho == 2:
-  print("Você está na sala: 3")
-  print("Escolha seu caminho:")
-  print("[1] - Caminho vermelho")
-  print("[2] - Caminho preto")
-  caminho = int(input())
-  if caminho == 1:
-    print("Você está na sala: ")
-    print("Escolha seu caminho:")
-    print("[1] - Caminho vermelho")
-    print("[2] - Caminho preto")
-    caminho = int(input())
 
-interação = 0
+mensagem_automática()
+
+interação = 1
+
 while interação < 7:
-  interação += 1
+
+  mensagem_automática()
+  interação +=1
+
 else:
   print("Você e sua guilda se perderam na dungeon e acabaram morrendo pelas criaturas místicas que viviam nela!")
   print("GGGGG   AAA   M   M  EEEEE      OOO   V   V  EEEEE  RRRR")
