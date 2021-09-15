@@ -2,14 +2,14 @@ numero_sala = 1
 linha1 = "Você está na sala:"
 interação = 1
 
-while interação < 7:
+print("{} {}" .format(linha1, numero_sala))
+print("Escolha seu caminho:")
+print("[1] - Caminho vermelho")
+print("[2] - Caminho preto")
+caminho = int(input())
+interação = + 1
 
-    print("{} {}" .format(linha1, numero_sala))
-    print("Escolha seu caminho:")
-    print("[1] - Caminho vermelho")
-    print("[2] - Caminho preto")
-    caminho = int(input())
-    interação = + 1
+while interação < 7:
 
     if caminho == 1:
         numero_sala += 1
