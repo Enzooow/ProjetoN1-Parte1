@@ -22,77 +22,35 @@ while interação < 7:
 
         break
 
-    if numero_sala == 7 and caminho == 1:
-        numero_sala += 1
-        print("{} {}" .format(linha1, numero_sala))
+    if numero_sala == 8 and caminho == 2:
+        import random
+        novo_numero = random.randint(1, 5)
+        print("{} {}" .format(linha1, novo_numero))
         print("Escolha seu caminho:")
         print("[1] - Caminho vermelho")
         print("[2] - Caminho preto")
         caminho = int(input())
         interação += 1
 
-        if caminho == 2:
-            import random
-            print("{} {}" .format(linha1, random.randint(1, 5)))
+        numero_sala = novo_numero
+
+        if caminho == 1:
+            numero_sala += 1
+            print("{} {}" .format(linha1, numero_sala))
             print("Escolha seu caminho:")
             print("[1] - Caminho vermelho")
             print("[2] - Caminho preto")
             caminho = int(input())
             interação += 1
 
-            if caminho == 1:
-                numero_sala += 1
-                print("{} {}" .format(linha1, numero_sala))
-                print("Escolha seu caminho:")
-                print("[1] - Caminho vermelho")
-                print("[2] - Caminho preto")
-                caminho = int(input())
-                interação += 1
-
-            elif caminho == 2:
-                numero_sala += 2
-                print("{} {}" .format(linha1, numero_sala))
-                print("Escolha seu caminho:")
-                print("[1] - Caminho vermelho")
-                print("[2] - Caminho preto")
-                caminho = int(input())
-                interação += 1
-
-    if numero_sala == 6 and caminho == 2:
-        numero_sala += 2
-        print("{} {}" .format(linha1, numero_sala))
-        print("Escolha seu caminho:")
-        print("[1] - Caminho vermelho")
-        print("[2] - Caminho preto")
-        caminho = int(input())
-        interação += 1
-
-        if caminho == 2:
-            import random
-            print("{} {}" .format(linha1, random.randint(1, 5)))
+        elif caminho == 2:
+            numero_sala += 2
+            print("{} {}" .format(linha1, numero_sala))
             print("Escolha seu caminho:")
             print("[1] - Caminho vermelho")
             print("[2] - Caminho preto")
             caminho = int(input())
             interação += 1
-
-            if caminho == 1:
-                numero_sala += 1
-                print("{} {}" .format(linha1, numero_sala))
-                print("Escolha seu caminho:")
-                print("[1] - Caminho vermelho")
-                print("[2] - Caminho preto")
-                caminho = int(input())
-                interação += 1
-
-            elif caminho == 2:
-                numero_sala += 2
-                print("{} {}" .format(linha1, numero_sala))
-                print("Escolha seu caminho:")
-                print("[1] - Caminho vermelho")
-                print("[2] - Caminho preto")
-                caminho = int(input())
-                interação += 1
 
     if numero_sala == 5 and caminho == 1:
         numero_sala += 1
