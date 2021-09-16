@@ -23,6 +23,15 @@ while interação < 7:
         break
 
     if numero_sala == 8 and caminho == 2:
+
+        if (numero_sala == 8 and caminho == 1) or (numero_sala == 7 and caminho == 2):
+            print("Sua guilda avista uma luz no final do tunel... É a saída!!! Vocês correm em direção a ela e saem.")
+            print("W W W   III    N   N")
+            print("W W W    I     NN  N")
+            print("W W W    I     N N N")
+            print(" WWW     I     N  NN")
+            print(" W W    III    N   N")
+
         import random
         novo_numero = random.randint(1, 5)
         print("{} {}" .format(linha1, novo_numero))
